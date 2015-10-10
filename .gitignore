@@ -1,2 +1,4 @@
 virtualenv-13.1.2/
 .idea/
+__pycache__/
+db.sqlite3
