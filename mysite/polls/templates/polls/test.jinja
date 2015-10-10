@@ -1,0 +1,10 @@
+{% set text='foo' %}
+
+{{ _('newstyle gettext variable %(text)s', text=text) }}
+{{ _('newstyle gettext static %(text)s', text='foo') }}
+
+{{ _('standard gettext variable %(text)s')|format(text=text) }}
+{{ _('standard gettext static %(text)s')|format(text='foo') }}
+
+{% trans text=text %}trans variable {{ text }}{% endtrans %}
+{% trans text='foo' %}trans static {{ text }}{% endtrans %}
